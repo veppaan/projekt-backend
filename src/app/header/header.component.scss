@@ -1,0 +1,15 @@
+mat-toolbar {
+    background-color: rgb(211, 93, 113);
+    width: 100%;
+    button:hover{
+        background-color: white;
+        color: rgb(211, 93, 113);
+    }
+}
+.container{
+    max-width: 20em;
+    margin: 0 auto;
+    button{
+        margin: 2em;
+    }
+}
