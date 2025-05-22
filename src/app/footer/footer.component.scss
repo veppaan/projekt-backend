@@ -1,10 +1,21 @@
+$brown-color: #5A462B;
 footer{
-    background-color: rgb(211, 93, 113);
+    background-color: $brown-color;
     color: rgba(255, 255, 255, 0.826);
-    padding: 0.5em 0;
+    padding: 2em 0;
+    margin-top: 2em;
     p{
         text-align: center;
         width: 50ch;
         margin: 0 auto;
+    }
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    margin-left: 15%;
+    a{
+        color: rgba(255, 255, 255, 0.826);
     }
 }
