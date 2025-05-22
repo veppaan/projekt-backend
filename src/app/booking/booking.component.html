@@ -43,6 +43,11 @@
         <option value="">Välj efterrätt</option>
         <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
     </select>
+    <label for="firstname">Ditt namn</label>
+    <input type="text" id="name" name="name">
+    <label for="number">Telefonnumer</label>
+    <input type="tel" id="number" name="number" required>
+
     <button type="submit">Beställ</button>
     </div>
 </form>
