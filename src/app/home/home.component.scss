@@ -7,6 +7,7 @@ $brown-color: #5A462B;
         max-height: 600px;
         background-size: cover;
         background-position: top;
+        margin-bottom: 1em;
     }
     .home-text{
         color: $brown-color;
@@ -23,27 +24,42 @@ $brown-color: #5A462B;
             font-weight: 300;
         }
     }
+    .second-text{
+        width: 60ch;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 800px){
-.home-start{
-    width: 100vw;
-    height: 400px;
-    background-size: cover;
-    background-position: top;
+    .home-start{
+        width: 100vw;
+        height: 400px;
+        background-size: cover;
+        background-position: top;
+        margin-bottom: 1em;
+    }
+    .home-text{
+        color: $brown-color;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+        padding: 1em;
+        border-radius: 20px;
+        width: fit-content;
+        transform: translateY(60%) translateX(17%);
+        text-align: center;
+        h2{
+            font-size: 1.6em;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+    .second-text{
+        width: 50ch;
+        margin: 0 auto;
+    }
 }
-.home-text{
+.second-text{
+    background-color: #F8F0E3;
+    padding: 1em 2.5em;
     color: $brown-color;
-    background-color: rgba($color: #ffffff, $alpha: 0.9);
-    padding: 1em;
-    border-radius: 20px;
-    width: fit-content;
-    transform: translateY(60%) translateX(17%);
-    text-align: center;
-    h2{
-        font-size: 1.6em;
-    }
-    p{
-        font-weight: 300;
-    }
-}
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
