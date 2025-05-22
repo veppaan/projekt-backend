@@ -1,1 +1,21 @@
-<p>booking works!</p>
+<div class="allMenu">
+<h2>Meny</h2>
+
+<h3>Förrätter</h3>
+<section *ngFor="let start of starters">
+    <h4>{{start.mealname}}</h4>
+        <p class="ingredients">{{start.ingredients.join(', ')}}</p>
+</section>
+
+<h3>Huvudrätter</h3>
+<section *ngFor="let main of mainCourses">
+    <h4>{{main.mealname}}</h4>
+        <p class="ingredients">{{main.ingredients.join(', ')}}</p>
+</section>
+
+<h3>Efterrätter</h3>
+<section *ngFor="let dessert of desserts">
+    <h4>{{dessert.mealname}}</h4>
+        <p class="ingredients">{{dessert.ingredients.join(', ')}}</p>
+</section>
+</div>
