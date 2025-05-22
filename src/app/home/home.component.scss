@@ -1,6 +1,6 @@
 $brown-color: #5A462B;
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1200px){
     .home-start{
         width: 100vw;
         min-height: 600px;
@@ -29,10 +29,10 @@ $brown-color: #5A462B;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (min-width: 800px) and (max-width: 1199px){
     .home-start{
         width: 100vw;
-        height: 400px;
+        height: 500px;
         background-size: cover;
         background-position: top;
         margin-bottom: 1em;
@@ -47,6 +47,34 @@ $brown-color: #5A462B;
         text-align: center;
         h2{
             font-size: 1.6em;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+    .second-text{
+        width: 50ch;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 799px){
+    .home-start{
+        width: 100vw;
+        height: 400px;
+        background-size: cover;
+        background-position: top;
+        margin-bottom: 1em;
+    }
+    .home-text{
+        color: $brown-color;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+        padding: 0.7em;
+        border-radius: 20px;
+        width: fit-content;
+        transform: translateY(60%) translateX(17%);
+        text-align: center;
+        h2{
+            font-size: 1.4em;
         }
         p{
             font-weight: 300;
