@@ -27,9 +27,18 @@ p{
     font-weight: 300;
 }
 .howTo{
-    width: fit-content;
+    width: 50ch;
     margin: 0 auto;
     text-align: center;
+    color: orange;
+    list-style-type: none;
+    border: 3px solid #95A284;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    h3{
+        color: orange;
+    }
 }
 .flex{
     display: flex;
@@ -61,13 +70,23 @@ label{
     height: 2em;
     padding: 0 30px 0 15px;
 }
-button{
+#pay.clicked{
+    background-color: white;
+    color: #7DC559;
+}
+#pay{
     margin-top: 2em;
-    background-color: #7DC559;
+    background-color: #5971c5;
+    color: white;
     border: 1px solid white;
-    padding: 1em 0;
+    padding: 1em 0.7em;
+    width: fit-content;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    cursor: pointer;
 }
 input[type=text], input[type=tel]{
     height: 2em;

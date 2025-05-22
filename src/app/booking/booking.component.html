@@ -21,33 +21,34 @@
 </div>
 
 <div class="howTo">
-<p>Såhär gör du:</p>
-<li>Läs igenom menyn, boka din kasse och hämta upp din beställning om 10 min!</li>
+<h3>Såhär gör du:</h3>
+<li>Läs igenom menyn, boka din kasse och hämta upp din beställning om 10 min! Oavsett vilka måltider du lägger till i din kasse så kostar den 89kr.</li>
 </div>
 
 <form>
     <div class="flex">
     <h3>Boka middagskasse</h3>
     <label for="starter">Välj förätt</label>
-    <select class="select" id="starter" name="starter" required>
+    <select class="select" id="starter" name="starter" [(ngModel)]="starter" required>
         <option value="">Välj förätt</option>
         <option *ngFor="let starter of starters" [value]="starter.mealname">{{starter.mealname}}</option>
     </select>
     <label for="main">Välj huvudrätt</label>
-    <select class="select" id="main" name="main" required>
+    <select class="select" id="main" name="main" [(ngModel)]="main" required>
         <option value="">Välj huvudrätt</option>
         <option *ngFor="let main of mainCourses" [value]="main.mealname">{{main.mealname}}</option>
     </select>
     <label for="dessert">Välj efterrätt</label>
-    <select class="select" id="dessert" name="dessert" required>
+    <select class="select" id="dessert" name="dessert" [(ngModel)]="dessert" required>
         <option value="">Välj efterrätt</option>
         <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
     </select>
     <label for="firstname">Ditt namn</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name" [(ngModel)]="name">
     <label for="number">Telefonnumer</label>
-    <input type="tel" id="number" name="number" required>
+    <input type="tel" id="number" name="number" [(ngModel)]="number" required>
 
-    <button type="submit">Beställ</button>
+
+    <button type="submit" id="pay" [disabled]="!starter || !main || !dessert || !number" (click)="payButton()">{{payText}}</button>
     </div>
 </form>
