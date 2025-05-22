@@ -12,16 +12,21 @@ mat-toolbar {
         margin: 2em;
     }
 }
+.active{
+    font-weight: bold;
+    text-decoration: underline !important;
+}
 nav{
     display: flex;
     column-gap: 1em;
-    li{
+    a{
         list-style-type: none;
+        text-decoration: none;
         color: rgb(90, 70, 43);
         padding: 0.4em 0.6em;
         font-size: 0.8em;
     }
-    li:hover{
+    a:hover{
         text-decoration: underline;
         cursor: pointer;
     }
@@ -38,6 +43,6 @@ nav{
 }
 hr{
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
 }

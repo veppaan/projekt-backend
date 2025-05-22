@@ -1,0 +1,49 @@
+$brown-color: #5A462B;
+
+@media screen and (min-width: 800px){
+    .home-start{
+        width: 100vw;
+        min-height: 600px;
+        max-height: 600px;
+        background-size: cover;
+        background-position: top;
+    }
+    .home-text{
+        color: $brown-color;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+        padding: 4em;
+        border-radius: 20px;
+        width: fit-content;
+        transform: translateY(80%) translateX(45%);
+        text-align: center;
+        h2{
+            font-size: 2em;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+.home-start{
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: top;
+}
+.home-text{
+    color: $brown-color;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    padding: 1em;
+    border-radius: 20px;
+    width: fit-content;
+    transform: translateY(60%) translateX(17%);
+    text-align: center;
+    h2{
+        font-size: 1.6em;
+    }
+    p{
+        font-weight: 300;
+    }
+}
+}

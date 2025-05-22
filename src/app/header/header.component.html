@@ -6,9 +6,9 @@
   <mat-toolbar>
     <div class="container">
       <nav>
-        <li mat-button routerLink="/home">Startsida</li>
-        <li mat-button routerLink="/booking">Utbud och bokning</li>
-        <li mat-button routerLink="/about">Om oss</li>
+        <a routerLink="/home" [routerLinkActive]="'active'">Startsida</a>
+        <a routerLink="/booking" [routerLinkActive]="'active'">Utbud och bokning</a>
+        <a routerLink="/about" [routerLinkActive]="'active'">Om oss</a>
       </nav>
     </div>
     </mat-toolbar>
