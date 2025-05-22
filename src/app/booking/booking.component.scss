@@ -1,0 +1,62 @@
+.allMenu{
+    width: fit-content;
+    padding: 1em 3em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: center;
+}
+.oneMeal{
+    line-height: 0;
+    margin-bottom: 3em;
+}
+h2{
+    font-size: 1.7em;
+    color: #5A462B;
+    margin-bottom: 1em;
+}
+h3{
+    text-decoration: underline;
+    color: #95A284;
+}
+h4{
+    color: #5A462B;
+    font-weight: 500;
+}
+p{
+    color: #C7B299;
+    font-weight: 300;
+}
+.howTo{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: fit-content;
+    padding: 1em 14em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: center;
+    background-color: #C7B299;
+    h3{
+        color: white;
+        font-size: 1.5em;
+    }
+}
+label{
+    font-weight: 300;
+}
+.select{
+    margin-bottom: 2em;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    height: 2em;
+    appearance: none;
+    padding: 0 30px 0 15px;
+}

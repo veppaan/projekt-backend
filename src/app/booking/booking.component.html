@@ -2,20 +2,47 @@
 <h2>Meny</h2>
 
 <h3>Förrätter</h3>
-<section *ngFor="let start of starters">
+<section class="oneMeal" *ngFor="let start of starters">
     <h4>{{start.mealname}}</h4>
         <p class="ingredients">{{start.ingredients.join(', ')}}</p>
 </section>
 
 <h3>Huvudrätter</h3>
-<section *ngFor="let main of mainCourses">
+<section class="oneMeal" *ngFor="let main of mainCourses">
     <h4>{{main.mealname}}</h4>
         <p class="ingredients">{{main.ingredients.join(', ')}}</p>
 </section>
 
 <h3>Efterrätter</h3>
-<section *ngFor="let dessert of desserts">
+<section class="oneMeal" *ngFor="let dessert of desserts">
     <h4>{{dessert.mealname}}</h4>
         <p class="ingredients">{{dessert.ingredients.join(', ')}}</p>
 </section>
 </div>
+
+<div class="howTo">
+<p>Såhär gör du:</p>
+<li>Läs igenom menyn, boka din kasse och hämta upp din beställning om 10 min!</li>
+</div>
+
+<form>
+    <div class="flex">
+    <h3>Boka middagskasse</h3>
+    <label for="starter">Välj förätt</label>
+    <select class="select" id="starter" name="starter" required>
+        <option value="">Välj förätt</option>
+        <option *ngFor="let starter of starters" [value]="starter.mealname">{{starter.mealname}}</option>
+    </select>
+    <label for="main">Välj huvudrätt</label>
+    <select class="select" id="main" name="main" required>
+        <option value="">Välj huvudrätt</option>
+        <option *ngFor="let main of mainCourses" [value]="main.mealname">{{main.mealname}}</option>
+    </select>
+    <label for="dessert">Välj efterrätt</label>
+    <select class="select" id="dessert" name="dessert" required>
+        <option value="">Välj efterrätt</option>
+        <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
+    </select>
+    <button type="submit">Beställ</button>
+    </div>
+</form>

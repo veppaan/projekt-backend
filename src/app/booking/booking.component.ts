@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './booking.component.scss'
 })
 export class BookingComponent {
-  private url: string = "https://backend-projekt-api-jxss.onrender.com"
+
   starters: any = [];
   mainCourses: any = [];
   desserts: any = [];
