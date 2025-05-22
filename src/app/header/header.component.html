@@ -1,11 +1,15 @@
 <header id="main-header">
     <div class="logo">
-    <img [src]="logo" alt="Logotyp i form av ett hundben och texten Voff-truck">
+    <img [src]="logo" alt="Logotyp i form av ett hundben och texten Voff-truck" routerLink="/home">
     </div>
+    <hr>
   <mat-toolbar>
     <div class="container">
-    <button mat-button routerLink="/home">Startsida</button>
-    <button mat-button routerLink="/booking">Boka bärplock</button>
+      <nav>
+        <li mat-button routerLink="/home">Startsida</li>
+        <li mat-button routerLink="/booking">Utbud och bokning</li>
+        <li mat-button routerLink="/about">Om oss</li>
+      </nav>
     </div>
     </mat-toolbar>
   </header>

@@ -1,21 +1,43 @@
 mat-toolbar {
-    background-color: rgb(211, 93, 113);
+    background-color: rgba(255, 255, 255, 0);
     width: 100%;
     height: 4em;
-    button:hover{
-        background-color: white;
-        color: rgb(211, 93, 113);
-    }
+    margin: -30px auto auto auto;
 }
 .container{
+    z-index: 20;
     max-width: 20em;
     margin: 0 auto;
     button{
         margin: 2em;
     }
 }
+nav{
+    display: flex;
+    column-gap: 1em;
+    li{
+        list-style-type: none;
+        color: rgb(90, 70, 43);
+        padding: 0.4em 0.6em;
+        font-size: 0.8em;
+    }
+    li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
 .logo{
-    max-width: 350px;
+    position: relative;
+    max-width: 300px;
     height: 100%;
-    margin: -70px auto -120px auto;
+    margin: -30px auto -95px auto;
+    z-index: 10;
+}
+.logo:hover{
+    cursor: pointer;
+}
+hr{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
