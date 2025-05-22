@@ -10,12 +10,25 @@ footer{
         margin: 0 auto;
     }
 }
-.links{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5em;
-    margin-left: 15%;
-    a{
-        color: rgba(255, 255, 255, 0.826);
+@media screen and (max-width: 799px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        margin-left: 8%;
+        a{
+            color: rgba(255, 255, 255, 0.826);
+        }
+    }
+}
+@media screen and (min-width: 800px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        margin-left: 15%;
+        a{
+            color: rgba(255, 255, 255, 0.826);
+        }
     }
 }
