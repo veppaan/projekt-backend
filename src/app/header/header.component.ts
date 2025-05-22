@@ -10,5 +10,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  logo: string = "images/Logotyp-typescript.png"
+  logo: string = "images/logotyp-kex-stor.svg"
 }
