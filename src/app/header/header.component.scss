@@ -1,6 +1,7 @@
 mat-toolbar {
     background-color: rgb(211, 93, 113);
     width: 100%;
+    height: 4em;
     button:hover{
         background-color: white;
         color: rgb(211, 93, 113);
@@ -12,4 +13,9 @@ mat-toolbar {
     button{
         margin: 2em;
     }
+}
+.logo{
+    max-width: 350px;
+    height: 100%;
+    margin: -70px auto -120px auto;
 }
