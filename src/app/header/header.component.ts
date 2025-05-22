@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatButton } from '@angular/material/button';
 import { MatToolbar } from '@angular/material/toolbar';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -10,5 +9,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  logo: string = "images/logotyp-kex-stor.svg"
+  logo: string = "images/logotyp-kex.svg"
 }

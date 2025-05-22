@@ -2,7 +2,7 @@ mat-toolbar {
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     height: 4em;
-    margin: -30px auto auto auto;
+    margin: 20px auto auto auto;
 }
 .container{
     z-index: 20;
@@ -28,9 +28,9 @@ nav{
 }
 .logo{
     position: relative;
-    max-width: 300px;
+    max-width: 250px;
     height: 100%;
-    margin: -30px auto -95px auto;
+    margin: 25px auto -50px auto;
     z-index: 10;
 }
 .logo:hover{
