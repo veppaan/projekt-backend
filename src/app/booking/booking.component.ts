@@ -11,14 +11,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class BookingComponent {
   starter: string= "";
-  main: string= "";
+  mainCourse: string= "";
   dessert: string= "";
-  name: string="";
+  firstname: string="";
+  lastname: string="";
   number: string = "";
   starters: any = [];
   mainCourses: any = [];
   desserts: any = [];
   constructor(private http: HttpClient) {}
+  
 
   ngOnInit(): void {
     this.http.get("https://backend-projekt-api-jxss.onrender.com/api/starters").subscribe(data => {
@@ -34,14 +36,32 @@ export class BookingComponent {
 
   payText = "Beställ och betala 89kr";
 
+  booking = {
+    starter: this.starter,
+    mainCourse: this.mainCourse,
+    dessert: this.dessert,
+    customer: {
+      firstname: this.firstname,
+      lastname: this.lastname,
+      number: this.number
+    }
+  }
+
   payButton(){
+    console.log(this.booking);
+    console.log("klick");
+    this.http.post('https://backend-bookings.onrender.com/bookings', this.booking).subscribe({
+      next: response => console.log("Yey:", response),
+      error: err => console.error("Ånej", err)
+    })
 
     this.starter="";
-    this.main="";
+    this.mainCourse="";
     this.dessert="";
-    this.name="";
+    this.firstname="";
+    this.lastname="";
     this.number="";
-    alert("Tack för din beställning! Du får ett sms inom 10 min att den är färdig att hämtas upp!");
+    alert("Tack för din beställning! Du får ett sms inom 10 min när den är färdig att hämtas upp!");
   }
 
 }
