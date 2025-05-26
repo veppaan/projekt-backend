@@ -44,9 +44,9 @@
         <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
     </select>
     <label for="firstname">Ditt förnamn</label>
-    <input type="text" id="firstname" name="firstname" [(ngModel)]="booking.customer.firstname">
+    <input type="text" id="firstname" name="firstname" [(ngModel)]="booking.customer.firstname" required>
     <label for="lastname">Ditt efternamn</label>
-    <input type="text" id="lastname" name="lastname" [(ngModel)]="booking.customer.lastname">
+    <input type="text" id="lastname" name="lastname" [(ngModel)]="booking.customer.lastname" required>
     <label for="number">Telefonnumer</label>
     <input type="tel" id="number" name="number" [(ngModel)]="booking.customer.number" required>
 
