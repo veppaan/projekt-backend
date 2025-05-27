@@ -1,24 +1,94 @@
-.allMenu{
-    width: fit-content;
-    padding: 1em 3em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    text-align: center;
-    word-break: break-word !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-    display: block;
+
+@media screen and (max-width: 799px){
+    .allMenu{
+        width: 350px;
+        padding: 1em 3em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .oneMeal{
+        line-height: 1.2;
+        margin-bottom: 3em;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        color: #C7B299;
+        font-weight: 300;
+        width: 40ch;
+        margin-top: 0.2em;
+        margin: 0 auto;
+    }
+    form{
+        width: 350px;
+        padding: 1em 4em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding-bottom: 2em;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #C7B299;
+    }
+    .howTo{
+        width: 40ch;
+        margin: 0 auto;
+        text-align: center;
+        color: orange;
+        list-style-type: none;
+        border: 3px solid #95A284;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1em 2em;
+        border-radius: 5px;
+    }
 }
-.oneMeal{
-    line-height: 0;
-    margin-bottom: 3em;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    word-break: break-word !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
+@media screen and (min-width: 799px){
+    .allMenu{
+        width: fit-content;
+        padding: 1em 3em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .oneMeal{
+        line-height: 1.2;
+        margin-bottom: 3em;
+        margin-top: 0;
+        width: 100%;
+    }
+    p{
+        color: #C7B299;
+        font-weight: 300;
+        width: 60ch;
+        margin-top: 0.2em;
+        margin: 0 auto;
+    }
+    form{
+        width: fit-content;
+        padding: 1em 14em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding-bottom: 2em;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #C7B299;
+    }
+    .howTo{
+        width: 50ch;
+        margin: 0 auto;
+        text-align: center;
+        color: orange;
+        list-style-type: none;
+        border: 3px solid #95A284;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1em 2em;
+        border-radius: 5px;
+    }
 }
+
 h2{
     font-size: 1.7em;
     color: #5A462B;
@@ -31,53 +101,25 @@ h3{
 h4{
     color: #5A462B;
     font-weight: 500;
+    margin-bottom: 0;
 }
-p{
-    color: #C7B299;
-    font-weight: 300;
-    background-color: red;
-    padding: 3em;
-    width: 100%;
-    word-break: break-word !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-    display: inline-block;
-}
-*{
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-}
-.howTo{
-    width: 50ch;
+.howTo p{
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
     color: orange;
-    list-style-type: none;
-    border: 3px solid #95A284;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: 1em 2em;
-    h3{
-        color: orange;
-    }
+}
+
+.howTo h3{
+    color: orange;
 }
 .flex{
     display: flex;
     flex-direction: column;
 }
-form{
-    width: fit-content;
-    padding: 1em 14em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding-bottom: 2em;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #C7B299;
-    h3{
-        color: white;
-        font-size: 1.5em;
-    }
+form h3{
+    color: white;
+    font-size: 1.5em;
 }
 label{
     font-weight: 300;
