@@ -55,12 +55,12 @@ export class BookingComponent {
       error: err => console.error("Ånej", err)
     })
 
-    this.starter="";
-    this.mainCourse="";
-    this.dessert="";
-    this.firstname="";
-    this.lastname="";
-    this.number="";
+    this.booking.starter="";
+    this.booking.mainCourse="";
+    this.booking.dessert="";
+    this.booking.customer.firstname="";
+    this.booking.customer.lastname="";
+    this.booking.customer.number="";
     alert("Tack för din beställning! Du får ett sms inom 10 min när den är färdig att hämtas upp!");
   }
 
