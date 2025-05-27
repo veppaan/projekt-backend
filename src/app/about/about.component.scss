@@ -1,0 +1,67 @@
+$brown-color: #5A462B;
+
+@media screen and (max-width: 799px){
+    .about{
+        color: $brown-color;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.634);
+    }
+    .about p{
+        width: 35ch;
+        z-index: 10;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.582);
+        font-size: 1.1em;
+        border: 1px solid #5a462b1f;
+        padding: 1em;
+        border-radius: 8px;
+        margin-bottom: 40em;
+    }
+}
+@media screen and (min-width: 800px){
+    .about{
+        width: fit-content;
+        color: $brown-color;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.634);
+    }
+    .about p{
+        width: 60ch;
+        z-index: 10;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.582);
+        font-size: 1.1em;
+        border: 1px solid #5a462b1f;
+        padding: 1em;
+        border-radius: 8px;
+        margin-bottom: 40em;
+    }
+
+}
+
+#dog{
+    transform: translateY(-115%) translateX(-50%);
+    z-index: 5;
+    position: absolute;
+}
+#buyhere{
+    background-color: orange;
+    color: white;
+    border: 0.5px solid #5A462B;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.8em 2.2em;
+    font-size: 1.2em;
+    transform: translateX(-110%) translateY(-230%);
+    position: absolute;
+    z-index: 1;
+}
+#buyhere:hover{
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+}
