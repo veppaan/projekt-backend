@@ -31,13 +31,25 @@ nav{
         cursor: pointer;
     }
 }
-.logo{
-    position: relative;
-    max-width: 250px;
-    height: 100%;
-    margin: 25px auto -50px auto;
-    z-index: 10;
+@media screen and (max-width: 799px){
+    .logo{
+        position: relative;
+        max-width: 150px;
+        height: 100%;
+        margin: 25px auto -50px auto;
+        z-index: 10;
+    }
 }
+@media screen and (min-width: 800px){
+    .logo{
+        position: relative;
+        max-width: 250px;
+        height: 100%;
+        margin: 25px auto -50px auto;
+        z-index: 10;
+    }
+}
+
 .logo:hover{
     cursor: pointer;
 }
