@@ -31,17 +31,17 @@
     <div class="error">
         <li *ngFor="let err of errors">{{ err }}</li>
     </div>
-    <label for="starter">Välj förätt</label>
+    <label for="starter">Välj förätt (*)</label>
     <select class="select" id="starter" name="starter" [(ngModel)]="booking.starter" required>
         <option value="">Välj förätt</option>
         <option *ngFor="let starter of starters" [value]="starter.mealname">{{starter.mealname}}</option>
     </select>
-    <label for="mainCourse">Välj huvudrätt</label>
+    <label for="mainCourse">Välj huvudrätt (*)</label>
     <select class="select" id="mainCourse" name="mainCourse" [(ngModel)]="booking.mainCourse" required>
         <option value="">Välj huvudrätt</option>
         <option *ngFor="let main of mainCourses" [value]="main.mealname">{{main.mealname}}</option>
     </select>
-    <label for="dessert">Välj efterrätt</label>
+    <label for="dessert">Välj efterrätt (*)</label>
     <select class="select" id="dessert" name="dessert" [(ngModel)]="booking.dessert" required>
         <option value="">Välj efterrätt</option>
         <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
@@ -50,7 +50,7 @@
     <input type="text" id="firstname" name="firstname" [(ngModel)]="booking.customer.firstname">
     <label for="lastname">Ditt efternamn</label>
     <input type="text" id="lastname" name="lastname" [(ngModel)]="booking.customer.lastname">
-    <label for="number">Telefonnumer</label>
+    <label for="number">Telefonnummer (*)</label>
     <input type="tel" id="number" name="number" [(ngModel)]="booking.customer.number" required>
 
 

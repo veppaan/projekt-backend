@@ -49,7 +49,6 @@ export class BookingComponent {
   errors: string[] = [];
 
   payButton(){
-    console.log(this.booking);
 
     this.errors = [];
     
@@ -67,6 +66,7 @@ export class BookingComponent {
     }
 
     if(this.errors.length == 0){
+      console.log(this.booking);
     this.http.post('https://backend-bookings.onrender.com/bookings', this.booking).subscribe({
       next: response => console.log("Bokningen lyckades:", response),
       error: err => console.error("Bokningen misslyckades", err)
