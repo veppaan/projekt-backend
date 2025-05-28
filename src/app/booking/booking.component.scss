@@ -148,6 +148,11 @@ label{
     border-radius: 8px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
+#pay:hover{
+    background-color: white;
+    color: #5971c5;
+    border: 1px solid #5971c5;
+}
 button:hover{
     cursor: pointer;
 }
@@ -163,4 +168,9 @@ input[type=text], input[type=tel]{
     margin: 1em;
     padding: 0.4em 0.8em;
     border-radius: 6px;
+}
+#info-booking{
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: black;
 }

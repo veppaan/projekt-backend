@@ -22,7 +22,7 @@
 
 <div class="howTo">
 <h3>Såhär gör du:</h3>
-<p>Läs igenom menyn, boka din kasse och hämta upp din beställning om 10 min! Oavsett vilka måltider du lägger till i din kasse så kostar den 89kr.</p>
+<p>Läs igenom menyn, boka din kasse och hämta upp din beställning om 10 min! Oavsett vilka måltider du lägger till i din kasse så kostar den <strong>89kr</strong>.</p>
 </div>
 
 <form>
@@ -55,5 +55,7 @@
 
 
     <button type="submit" id="pay" [disabled]="" (click)="payButton()">{{payText}}</button>
+
+    <p id="info-booking"><i>Om du bokar utanför öppningstider så kommer kassen finnas klar för upphämtning vid öppningstid.</i></p>
     </div>
 </form>
