@@ -157,3 +157,10 @@ input[type=text], input[type=tel]{
     border: none;
     margin-bottom: 1.5em;
 }
+.error li{
+    color: red;
+    background-color: white;
+    margin: 1em;
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+}

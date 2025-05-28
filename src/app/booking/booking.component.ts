@@ -46,13 +46,30 @@ export class BookingComponent {
       number: this.number
     }
   }
+  errors: string[] = [];
 
   payButton(){
     console.log(this.booking);
-    console.log("klick");
+
+    this.errors = [];
+    
+    if(!this.booking.starter){
+      this.errors.push("Du måste välja en förrätt");
+    }
+    if(!this.booking.mainCourse){
+      this.errors.push("Du måste välja en huvudrätt");
+    }
+    if(!this.booking.dessert){
+      this.errors.push("Du måste välja en efterrätt");
+    }
+    if(!this.booking.customer.number){
+      this.errors.push("Du måste skriva in ditt nummer");
+    }
+
+    if(this.errors.length == 0){
     this.http.post('https://backend-bookings.onrender.com/bookings', this.booking).subscribe({
-      next: response => console.log("Yey:", response),
-      error: err => console.error("Ånej", err)
+      next: response => console.log("Bokningen lyckades:", response),
+      error: err => console.error("Bokningen misslyckades", err)
     })
 
     this.booking.starter="";
@@ -62,6 +79,7 @@ export class BookingComponent {
     this.booking.customer.lastname="";
     this.booking.customer.number="";
     alert("Tack för din beställning! Du får ett sms inom 10 min när den är färdig att hämtas upp!");
+  }
   }
 
 }

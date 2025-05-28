@@ -28,6 +28,9 @@
 <form>
     <div class="flex">
     <h3>Boka middagskasse</h3>
+    <div class="error">
+        <li *ngFor="let err of errors">{{ err }}</li>
+    </div>
     <label for="starter">Välj förätt</label>
     <select class="select" id="starter" name="starter" [(ngModel)]="booking.starter" required>
         <option value="">Välj förätt</option>
@@ -44,9 +47,9 @@
         <option *ngFor="let dessert of desserts" [value]="dessert.mealname">{{dessert.mealname}}</option>
     </select>
     <label for="firstname">Ditt förnamn</label>
-    <input type="text" id="firstname" name="firstname" [(ngModel)]="booking.customer.firstname" required>
+    <input type="text" id="firstname" name="firstname" [(ngModel)]="booking.customer.firstname">
     <label for="lastname">Ditt efternamn</label>
-    <input type="text" id="lastname" name="lastname" [(ngModel)]="booking.customer.lastname" required>
+    <input type="text" id="lastname" name="lastname" [(ngModel)]="booking.customer.lastname">
     <label for="number">Telefonnumer</label>
     <input type="tel" id="number" name="number" [(ngModel)]="booking.customer.number" required>
 
