@@ -6,6 +6,8 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         text-align: center;
+        white-space: normal;
+        word-break: break-word;
     }
     .oneMeal{
         line-height: 1.2;
@@ -13,6 +15,8 @@
         margin-top: 0;
         width: 100%;
         text-align: center;
+        white-space: normal;
+        word-break: break-word;
     }
     p{
         color: #C7B299;
@@ -20,6 +24,8 @@
         width: 35ch;
         margin-top: 0.2em;
         margin: 0 auto;
+        white-space: normal;
+        word-break: break-word;
     }
     form{
         width: 290px;
@@ -51,12 +57,16 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         text-align: center;
+        white-space: normal;
+        word-break: break-word;
     }
     .oneMeal{
         line-height: 1.2;
         margin-bottom: 3em;
         margin-top: 0;
         width: 100%;
+        white-space: normal;
+        word-break: break-word;
     }
     p{
         color: #C7B299;
@@ -64,6 +74,8 @@
         width: 60ch;
         margin-top: 0.2em;
         margin: 0 auto;
+        white-space: normal;
+        word-break: break-word;
     }
     form{
         width: fit-content;
