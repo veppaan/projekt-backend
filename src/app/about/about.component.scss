@@ -10,14 +10,61 @@ $brown-color: #5A462B;
     }
     .about p{
         width: 35ch;
-        z-index: 10;
         position: relative;
-        background-color: rgba(255, 255, 255, 0.582);
+        z-index: 10;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.713);
         font-size: 1.1em;
         border: 1px solid #5a462b1f;
         padding: 1em;
         border-radius: 8px;
-        margin-bottom: 40em;
+        margin-bottom: 2em;
+    }
+    form{
+        z-index: 11;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        margin-bottom: 14em;
+        background-color: #c7b299bb;
+        padding: 1em;
+        border-radius: 20px;
+    }
+    #sendMsg{
+        background-color: green;
+        color: white;
+        height: 2em;
+        margin-top: 1.5em;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    #sendMsg:hover{
+        color: green;
+        background-color: white;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    input{
+        height: 1.8em;
+        border-radius: 8px;
+        border:none;
+        width: 80%;
+    }
+    textarea{
+        border-radius: 8px;
+        border: none;
+        width: 80%;
+    }
+    label{
+        margin-top: 1em;
+    }
+    h2{
+        font-size: 1.4em;
     }
 }
 @media screen and (min-width: 800px){
@@ -37,7 +84,47 @@ $brown-color: #5A462B;
         border: 1px solid #5a462b1f;
         padding: 1em;
         border-radius: 8px;
-        margin-bottom: 40em;
+        margin-bottom: 3em;
+    }
+    form{
+        z-index: 11;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 550px;
+        margin-bottom: 16em;
+        background-color: #c7b299bb;
+        padding: 3em;
+        border-radius: 20px;
+    }
+    label{
+        margin-top: 1em;
+    }
+    #sendMsg{
+        background-color: green;
+        color: white;
+        height: 3em;
+        margin-top: 1.5em;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    #sendMsg:hover{
+        color: green;
+        background-color: white;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    input{
+        height: 1.8em;
+        border-radius: 8px;
+        border:none;
+    }
+    textarea{
+        border-radius: 8px;
+        border: none;
     }
 
 }
@@ -56,7 +143,7 @@ $brown-color: #5A462B;
     width: fit-content;
     padding: 0.8em 2.2em;
     font-size: 1.2em;
-    transform: translateX(-110%) translateY(-230%);
+    transform: translateX(-100%) translateY(-225%);
     position: absolute;
     z-index: 1;
 }
