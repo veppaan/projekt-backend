@@ -9,4 +9,4 @@ Om bokningar görs vid sidan så hamnar de på en databas.
 Sidor i webbplatsen:
 - Startsida: Visar en sida som välkomnar användare, visar öppettider och karta via Google Maps API
 - Utbud & bokning: Visar hela meyn för matkassar samt bokninngsformulär för beställningar
-- Om oss: INfo om företaget och kontaktformulär
+- Om oss: Info om företaget och kontaktformulär
