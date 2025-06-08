@@ -1,5 +1,7 @@
-$brown-color: #5A462B;
+/* Styling för om oss-sidan */
 
+$brown-color: #5A462B;
+/* Styling för mellanstor skärm */
 @media screen and (max-width: 799px) and (min-width: 451px){
     .about{
         color: $brown-color;
@@ -80,6 +82,7 @@ $brown-color: #5A462B;
         font-size: 1.4em;
     }
 }
+/* Styling fölr liten skärm */
 @media screen and (max-width: 450px){
 #buyhere{
     background-color: orange;
@@ -160,6 +163,7 @@ h2{
     font-size: 1.4em;
 }
 }
+/* Styling för stor skärm */
 @media screen and (min-width: 800px){
     .about{
         width: fit-content;

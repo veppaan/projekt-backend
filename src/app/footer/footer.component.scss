@@ -1,4 +1,7 @@
+/* Styling för footer */
+
 $brown-color: #5A462B;
+
 footer{
     background-color: $brown-color;
     color: rgba(255, 255, 255, 0.826);
@@ -10,6 +13,7 @@ footer{
         margin: 0 auto;
     }
 }
+/* Styling för små skärmar */
 @media screen and (max-width: 799px){
     .links{
         display: flex;
@@ -21,6 +25,7 @@ footer{
         }
     }
 }
+/* Styling för stora skärmar */
 @media screen and (min-width: 800px){
     .links{
         display: flex;

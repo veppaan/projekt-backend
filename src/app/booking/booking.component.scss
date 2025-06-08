@@ -1,4 +1,6 @@
+/* Styling för bokningssidan */
 
+/* Styling för liten skärm */
 @media screen and (max-width: 799px){
     .allMenu{
         width: 290px;
@@ -50,6 +52,7 @@
         border-radius: 5px;
     }
 }
+/* Styling för stora skärmar */
 @media screen and (min-width: 799px){
     .allMenu{
         width: fit-content;
