@@ -1,6 +1,6 @@
 $brown-color: #5A462B;
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 799px) and (min-width: 451px){
     .about{
         color: $brown-color;
         width: fit-content;
@@ -43,6 +43,19 @@ $brown-color: #5A462B;
         border-radius: 10px;
         font-size: 1em;
     }
+    #buyhere{
+        background-color: orange;
+        color: white;
+        border: 0.5px solid #5A462B;
+        border-radius: 8px;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 0.8em 2.2em;
+        font-size: 1.2em;
+        transform: translateX(-100%) translateY(-225%);
+        position: absolute;
+        z-index: 1;
+    }
     #sendMsg:hover{
         color: green;
         background-color: white;
@@ -66,6 +79,86 @@ $brown-color: #5A462B;
     h2{
         font-size: 1.4em;
     }
+}
+@media screen and (max-width: 450px){
+#buyhere{
+    background-color: orange;
+    color: white;
+    border: 0.5px solid #5A462B;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    transform: translateX(-100%) translateY(-250%);
+    position: absolute;
+    z-index: 1;
+}
+.about{
+    color: $brown-color;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.634);
+}
+.about p{
+    width: 35ch;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.713);
+    font-size: 1.1em;
+    border: 1px solid #5a462b1f;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+form{
+    z-index: 11;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 14em;
+    background-color: #c7b299bb;
+    padding: 1em;
+    border-radius: 20px;
+}
+#sendMsg{
+    background-color: green;
+    color: white;
+    height: 2em;
+    margin-top: 1.5em;
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 1em;
+}
+#sendMsg:hover{
+    color: green;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+input{
+    height: 1.8em;
+    border-radius: 8px;
+    border:none;
+    width: 80%;
+}
+textarea{
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+}
+label{
+    margin-top: 1em;
+}
+h2{
+    font-size: 1.4em;
+}
 }
 @media screen and (min-width: 800px){
     .about{
@@ -126,6 +219,19 @@ $brown-color: #5A462B;
         border-radius: 8px;
         border: none;
     }
+    #buyhere{
+        background-color: orange;
+        color: white;
+        border: 0.5px solid #5A462B;
+        border-radius: 8px;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 0.8em 2.2em;
+        font-size: 1.2em;
+        transform: translateX(-100%) translateY(-225%);
+        position: absolute;
+        z-index: 1;
+    }
 
 }
 
@@ -134,19 +240,7 @@ $brown-color: #5A462B;
     z-index: 5;
     position: absolute;
 }
-#buyhere{
-    background-color: orange;
-    color: white;
-    border: 0.5px solid #5A462B;
-    border-radius: 8px;
-    margin: 0 auto;
-    width: fit-content;
-    padding: 0.8em 2.2em;
-    font-size: 1.2em;
-    transform: translateX(-100%) translateY(-225%);
-    position: absolute;
-    z-index: 1;
-}
+
 #buyhere:hover{
     cursor: pointer;
     background-color: white;
